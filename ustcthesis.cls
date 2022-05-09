@@ -686,7 +686,7 @@
 
 % Times New Roman + Arial
 \newcommand\ustc@set@font@times{%
-  \setmainfont{Times New Roman}%
+  % \setmainfont{Times New Roman}%
   \setsansfont{Arial}%
   \ifustc@system@mac
     \setmonofont{Menlo}[Scale = MatchLowercase]%
