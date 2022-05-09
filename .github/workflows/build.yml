@@ -17,13 +17,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Download the fonts
-        run: sudo apt install ttf-mscorefonts-installer 
+      # - name: Download the fonts
+      #   run: sudo apt install ttf-mscorefonts-installer 
 
-      - name: Download the fonts
-        run: |
-          curl -sL "https://yihui.org/tinytex/install-bin-unix.sh" | sh
-          tlmgr install anyfontsize fontawesome5
 
       # - name: Download the fonts
       #   run: for i in times.ttf simhei.ttf simkai.ttf simsun.ttc simsunb.ttf simfang.ttf; do wget -P fonts/ https://xugr.keybase.pub/static/fonts/$i; done

@@ -20,7 +20,7 @@ Uncertainty Assessment of Source Parameters and Ambient Noise Imaging Based on D
 
 ## Download
 
-- Download template PDF [main.pdf](https://github.com/OUCyf/My-Master-Thesis/raw/gh-pages/main.pdf)
+- Download template PDF [main.pdf](https://github.com/OUCyf/My-Master-Thesis/main.pdf)
 
 
 

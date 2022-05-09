@@ -1,6 +1,6 @@
 # MacOS junk
 *.DS_Store
-main.pdf
+# main.pdf
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
