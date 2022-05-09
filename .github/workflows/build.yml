@@ -26,8 +26,8 @@ jobs:
       # - name: Copy the fonts # In newer version of fontconfig, it reads $HOME/.local/share/fonts/ but not $HOME/.fonts
       #   run: mkdir -p ~/.local/share/fonts && cp -r fonts/* ~/.local/share/fonts/
       
-      # - name: Build font information caches
-      #   run: fc-cache -rv
+      - name: Build font information caches
+        run: fc-cache -rv
 
       - name: Install TexLive and make
         uses: xu-cheng/texlive-action/full@v1
