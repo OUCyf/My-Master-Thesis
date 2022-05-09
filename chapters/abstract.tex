@@ -1,0 +1,84 @@
+% !TeX root = ../main.tex
+
+\ustcsetup{
+  keywords = {
+    震源机制, MCMC, DAS, 噪声成像
+  },
+  keywords* = {
+    Focal Mechanism, MCMC, DAS, Noise Imaging
+  },
+}
+
+\begin{abstract}
+  % 震源与结构是地震学研究的两个主要方面，两者紧密联系，相互促进。
+  % 本论文聚焦于以下两个方面研究，地震震源参数的不确定评估，与基于DAS观测的背景噪声干涉成像。
+
+  本论文利用贝叶斯蒙特卡洛反演策略，对地震震源参数的反演结果进行不确定性评估。
+  设计并编写了基于Julia语言的大规模快速互相关程序，并将其应用到DAS观测数据的背景噪声干涉成像中。
+
+
+  准确的震源参数(如震级、震源位置和震源机制)在震源研究和地震危险性评估中至关重要。
+  常规的震源参数估计工作流程包括震源位置反演和震源机制反演两个步骤，
+  单独反演震源参数会受到两步反演过程累积误差的影响。
+  马尔可夫蒙特卡洛（MCMC）作为一种全局优化方法，被广泛应用于非线性反演问题中，以减少累积误差并提供不确定性评估，但MCMC的应用受先验信息的影响较大。
+  在本研究中，我们提供了一个新的震源参数反演方法，其利用了CAP算法和贝叶斯推理，使用马尔可夫链在一个反演流程中实现了震源位置反演和震源机制反演。
+  该方法能有效地减少先验模型的依赖，并与当前的地震学编程生态紧密结合。
+  为了证明新方案的有效性，我们将新方法应用于2021年中国云南漾濞地震和2008美国Mt. Carmel地震。
+  与地震目录给出的结果相比，新方法反演的双力偶和矩张量解都是可靠的。
+  通过设置不同的初始模型，验证了该方法的鲁棒性和存在的局限性。
+
+  背景噪声干涉技术是21世纪地震学最重要的突破之一，其基本原理是通过互相关运算提取台站对间的经验格林函数。
+  本文详细讨论了不同假设前提下的背景噪声干涉理论，提出了一种大规模并行计算互相关的程序，并将其应用到分布式光纤传感技术（DAS）的地震观测中。
+  DAS作为一种新的地震观测手段，利用光纤中的散射光信号测定地表的应变，能够有效地提高了观测密度。
+  我们对2020年北京白家疃DAS观测实验数据进行详细分析，从中识别出人工落锤信号、天然地震信号与周边干扰噪音信号，
+  通过提取经验格林函数中的基阶面波频散信息，获得地下浅层S波速度结构剖面。
+  以上初步实验结果表明，在未来城市地下空间探测中，光纤传感技术将会发挥重要作用。
+  
+
+\end{abstract}
+
+\begin{abstract*}
+  % Source and structure studies are the key in seismology, which are closely linked and mutually promoted.
+  % In this thesis, we focus on the uncertainty assessment of earthquake source parameters, and  ambient noise imaging based on DAS observations.
+
+  In this paper, we use bayesian Monte Carlo inversion strategy to evaluate the uncertainty of seismic source parameters inversion results.
+  We propose a large scale fast cross-correlation code based on Julia language, and we applied it to ambient noise interference imaging based on DAS observation.
+
+  Accurate earthquake source parameters (e.g., magnitude, source location, and focal mechanism) are of key importance in seismic source studies and seismic hazard assessments. 
+  The rountine workflow of source parameters estimation consists of two steps: source location inversion and focal mechanism inversion. 
+  Separate inversion of source parameters may suffer from the cumulative uncertainties of both two steps inversion processes. 
+  Markov Chain Monte Carlo (MCMC), as a global optimization, 
+  has been adopted in many nonlinear inversion problems to reduce cumulative errors and provide uncertainty assessment, 
+  but the application of MCMC is strongly subject to the prior information. 
+  In this study, we present a new approach that take the advantages of CAP algorithm and Bayesian Inference, using Markov Chain to implement the source location inversion and focal mechanism inversion in one inverion workflow. 
+  The new approach can effectively reduce the prior model dependence, and is closely integrated to the current seismological programming ecosystem. 
+  To demonstrate the effectiveness of the new package, we applied the MCMTpy to the 2021 Yangbi Earthquake, Yunnan, China and 2008 Mt. Carmel Earthquake, Illinois, US. 
+  Comparison between our results and other catalog solutions illustrates that both double-couple and moment-tensor solution can be reliably recovered. 
+  Robustness and limitations of our approach are demonstrated by an experiment with difference random initial models.
+
+  Ambient noise interference is the most important breakthrough in the 21st century, and the basic principle is to extract empirical Green's function between station pairs through cross-correlation operation.
+  In this paper, we depict ambient noise interference theory in detail, and discuss the problems in different assumptions of ambient noise interference. 
+  We proposed a new code for large-scale ambient noise cross-correlation, and we applied it to Distributes Acoustic Sensing (DAS) observation.
+  As a new seismic observation approach, DAS can effectively improve the observation density by using the scattered light signal in the optical fiber to measure the surface strain.
+With a detailed analysis of 2020 Baijiatauan DAS observation experimrnt in Beijing, we successfully indentified the hammer signal, natural seismic signal and surrounding noise signal.
+By extracting the fundamental mode  dispersion of surface wave from empirical Green's function, we inverted the S-wave velocity shallow structure.
+The above preliminary experimental results indicate that the DAS observation will play an important role in urban space detection in the future.
+
+
+%   We applied ambient noise interference technology to a DAS array observation experiment in Baijiatauan in 2020, 
+% and analyzed recorded signals in detail. We inverted shallow velocity based on ambient noise interference, and discussed the potential problems.
+
+
+% Seismic observation in urban areas is important for urban underground space planning, construction and earthquake mitigation. 
+% In general, the detailed detection of underground spatial structure depends on the arrangement of high-density station array, 
+% but it is often difficult to carry out the arrangement of high-density station array in densely populated urban areas. 
+% As a new seismic observation method, distributed optical fiber sensing technology (DAS) provides a new solution for low cost and high density station array. 
+% In order to verify the feasibility of domestic self-developed optical fiber sensing equipment in shallow structure detection, 
+% we conducted seismic observation experiments in Beijing for ten consecutive days during the National Day period in 2020. 
+% The optical cable, with a total length of about 1 kilometer, was divided into 260 independent observation units with a spacing of 4 meters, 
+% during which 80 artificial drop weight experiments were conducted. 
+% A total 20 T of original data were obtained during the ten days' observation experiment. 
+% The artificial drop hammer signal, natural seismic signal and surrounding interference noise could be identified from the seismic records processed by down-sampling. 
+% Surface wave signals extracted by background noise cross-correlation technique can be used to obtain the subsurface S-wave velocity structure profile. 
+
+\end{abstract*}
