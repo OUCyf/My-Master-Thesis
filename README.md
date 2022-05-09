@@ -41,7 +41,7 @@
 2. **Build via Makefile**:
 
 		$ make
-      $ make clean
+		$ make clean
 
 
 3. **Build via VSCode**:
