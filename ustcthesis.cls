@@ -688,11 +688,11 @@
 \newcommand\ustc@set@font@times{%
   % \setmainfont{Times New Roman}%
   % \setsansfont{Arial}%
-  \ifustc@system@mac
-    \setmonofont{Menlo}[Scale = MatchLowercase]%
-  \else
-    \setmonofont{Courier New}[Scale = MatchLowercase]%
-  \fi
+  % \ifustc@system@mac
+  %   \setmonofont{Menlo}[Scale = MatchLowercase]%
+  % \else
+  %   \setmonofont{Courier New}[Scale = MatchLowercase]%
+  % \fi
 }
 
 % TeX Gyre Termes
