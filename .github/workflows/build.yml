@@ -30,13 +30,13 @@ jobs:
       # - name: Build font information caches
       #   run: fc-cache -rv
 
-      # - name: Install TexLive and make
-      #   uses: xu-cheng/texlive-action/full@v1
-      #   with:
-      #     run: |
-      #       apk add make
-      #       make
-      #       make clean
+      - name: Install TexLive and make
+        uses: xu-cheng/texlive-action/full@v1
+        with:
+          run: |
+            apk add make
+            make
+            make clean
 
       - name: Prepare files for gh-pages
         run: |
