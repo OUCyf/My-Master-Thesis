@@ -6,13 +6,13 @@
 ## Thesis
 
 - **Title**: 震源参数的不确定性评估与基于DAS观测的背景噪声干涉成像
-(Uncertainty Assessment of Source Parameters and Ambient Noise Imaging Based on DAS Observation)
+Uncertainty Assessment of Source Parameters and Ambient Noise Imaging Based on DAS Observation
 
-- **Author:** 尹扶（Fu Yin）
+- **Author:** 尹扶 Fu Yin
 
-- **Speciality:** 地质工程(Geological Engineering)
+- **Speciality:** 地质工程 Geological Engineering
   
-- **Supervisor:** 王宝善教授，杨微研究员(Prof. Baoshan Wang，Prof. Wei Yang)
+- **Supervisor:** 王宝善教授，杨微研究员 Prof. Baoshan Wang，Prof. Wei Yang
 
 
 
